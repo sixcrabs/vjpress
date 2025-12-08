@@ -7,6 +7,15 @@ outline: deep
 **Slardar** 
 基于 Spring Securtiy 框架封装定义了 4A (Authentication、Authorization、Account、Audit) 相关的接口和逻辑流程，应用服务可以快速具有4A等能力。
 
+## 版本说明
+
+根据使用环境的不同，拆分为以下两个大的版本号，后续说明基于 `1.7.0` 版本来介绍 (2.0版本用法基本一致)
+
+| 版本 | springboot版本 | jdk版本 |
+|---------|---------|---------|
+| 1.7.0   | springboot 2.5+   | java8   |
+| 2.0.0   | springboot 3.5+   | java17   |
+
 ## 特性
 
 - 基于 spring security 实现认证和权限控制
@@ -15,12 +24,20 @@ outline: deep
 - 支持登录加密、验证码等
 - 支持 LDAP 等用户联合认证体系
 - 支持集成方实现SPI进行自定义扩展
-- ...
+- oauth2 客户端集成，方便接入微博、gitee 等方式登录
+- 丰富的定制扩展能力
+- 支持 springboot 3 （版本 `2.0.0-SNAPSHOT`）
 
 ## 版本更新
 
-最新版本: `1.6.0-SNAPSHOT`
+最新版本: `1.7.0-SNAPSHOT`
 
+### 1.7.0-SNAPSHOT
+- 更新升级内部依赖包的版本号
+- 增加插件`slardar-ext-firewall` 用于控制接口访问
+- 增加了`license`授权模块，可用于对应用进行授权
+- 其他一些bug修复
+  
 ### 1.6.0-SNAPSHOT
 - 移除了 `hutool` 的相关依赖，改为内部实现，可以避免和应用包内的 hutool 依赖冲突
 - 重写了 `keystore` 模块，支持多种存储方式(memory/mapdb/mvstore/redis), 在轻量的单体服务中，可以不必依赖redis，采用内部存储即可
