@@ -55,7 +55,7 @@ export default defineConfig({
       {
         text: "生态",
         items: [
-          { text: "前端资源", link: "https://cat-eat-bat.github.io/vfe/" }
+          { text: "前端资源", link: "https://sixcrabs.github.io/vfe/" }
         ],
       },
       // {
@@ -177,7 +177,7 @@ export default defineConfig({
     socialLinks: [
       {
         icon: "github",
-        link: "https://github.com/cat-eat-bat",
+        link: "https://github.com/sixcrabs",
         ariaLabel: "github profile url",
       },
     ],
@@ -188,7 +188,7 @@ export default defineConfig({
     },
     editLink: {
       pattern:
-        "https://github.com/cat-eat-bat/vjpress/edit/main/src/:path",
+        "https://github.com/sixcrabs/vjpress/edit/main/src/:path",
       text: "帮助完善此文档",
     },
   },
