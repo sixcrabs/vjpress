@@ -1,6 +1,6 @@
 /*
  * @Author: Alex
- * @LastEditors: yxfacw@163.com
+ * @LastEditors: parselife@gmail.com
  * @Date: 2024-11-20
  * @Description:
  */
@@ -14,7 +14,7 @@ export default defineConfig({
   titleTemplate: ":title - Vintage Java",
   description: "Vintage Java Library",
   // 站点将部署到的 base URL
-  base: "/vjpress",
+  base: "/",
   srcDir: "./src",
   outDir: "./dist",
   lastUpdated: true,

@@ -1,8 +1,8 @@
 /*
  * @Author: Alex yxfacw@163.com
  * @Date: 2025-01-10 13:22:23
- * @LastEditTime: 2025-01-10 15:33:49
- * @LastEditors: Alex yxfacw@163.com
+ * @LastEditTime: 2026-05-11 14:03:32
+ * @LastEditors: parselife@gmail.com
  * @Description: .
  */
 import { createContentLoader } from "vitepress";
@@ -26,7 +26,7 @@ export default createContentLoader("../src/posts/p-*.md", {
       .map(({ url, frontmatter }) => {
         return {
           title: frontmatter.title,
-          url: `/vjpress${url}`,
+          url: `${url}`,
           date: formatDate(frontmatter.date),
           excerpt: frontmatter.excerpt,
           tags: frontmatter.tags || [],
