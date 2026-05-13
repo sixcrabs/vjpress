@@ -5,7 +5,7 @@ tags: ["postgres","postgis"]
 outline: deep
 ---
 
-#  PostGIS 版本查询 SQL1
+#  PostGIS 版本查询 SQL
 
 <PostMeta />
 
