@@ -5,5 +5,13 @@ title: 文章标题
 date: 日期，格式 yyyy-MM-dd
 excerpt: 文章摘要...
 tags: 标签，如 ["cesium"]
-outline: "deep"
+outline: deep
 ---
+
+<PostMeta />
+
+正文markdown...
+
+
+
+<PostNav />
