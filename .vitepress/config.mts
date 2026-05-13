@@ -188,7 +188,7 @@ export default defineConfig({
     },
     editLink: {
       pattern:
-        "https://github.com/sixcrabs/vjpress/edit/main/src/:path",
+        "https://github.com/sixcrabs/vjpress/edit/vercel/src/:path",
       text: "帮助完善此文档",
     },
   },
